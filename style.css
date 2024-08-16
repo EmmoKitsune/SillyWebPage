@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Symbols Only';
-    src: url('fonts/SymbolsNerdFontMono-Regular.ttf') format('truetype');
-}
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
 
 .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -30,10 +27,10 @@
   
 .search { 
     grid-area: search;
-    font-family: 'Symbols Only', sans-serif;
-    font-size: 24px;
 }
   
+
+
 .newtab { grid-area: newtab; }
   
 .incognito { grid-area: incognito; }
