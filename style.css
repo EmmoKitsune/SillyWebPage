@@ -3,11 +3,6 @@
     src: url('fonts/SymbolsNerdFontMono-Regular.ttf') format('truetype');
 }
 
-.icon {
-    font-family: 'Symbols Only', sans-serif;
-    font-size: 24px; /* Ajusta el tamaño del icono */
-}
-
 .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -33,7 +28,11 @@
   
 .pfp { grid-area: pfp; }
   
-.search { grid-area: search; }
+.search { 
+    grid-area: search;
+    font-family: 'Symbols Only', sans-serif;
+    font-size: 24px;
+}
   
 .newtab { grid-area: newtab; }
   
