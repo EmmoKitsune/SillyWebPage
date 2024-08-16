@@ -8,6 +8,52 @@
     font-size: 24px; /* Ajusta el tamaño del icono */
 }
 
-body {
-    background-color: whitesmoke;
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px 8px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . ."
+      "pfp pfp clockAndWeather clockAndWeather images extraButtons"
+      "pfp pfp clockAndWeather clockAndWeather launcher extraButtons"
+      "pfp pfp newtab incognito launcher extraButtons"
+      "search etc etc etc launcher extraButtons"
+      ". . . . . .";
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 80em;
+    height: 50em;
+    border-radius: 1em;
+  }
+  
+.pfp { grid-area: pfp; }
+  
+.search { grid-area: search; }
+  
+.newtab { grid-area: newtab; }
+  
+.incognito { grid-area: incognito; }
+  
+.etc { grid-area: etc; }
+  
+.launcher { grid-area: launcher; }
+  
+.images { grid-area: images; }
+  
+.clockAndWeather { grid-area: clockAndWeather; }
+  
+.extraButtons { grid-area: extraButtons; }
+
+.grid-item{
+    border-radius: 1em;
+    background-color: rgba(19,19,18,255);
+    text-align: center;
+    padding: 1.25em;
+    margin: 0.19em; 
+    transition: 0.4s;
 }
