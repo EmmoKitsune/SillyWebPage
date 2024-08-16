@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Symbols Only';
+    src: url('fonts/SymbolsNerdFontMono-Regular.ttf') format('truetype');
+}
+
+.icon {
+    font-family: 'Symbols Only', sans-serif;
+    font-size: 24px; /* Ajusta el tamaño del icono */
+}
+
+body {
+    background-color: whitesmoke;
+}
