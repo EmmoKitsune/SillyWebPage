@@ -9,4 +9,6 @@ function showHour(){
     document.getElementById('usrHour').innerText = formatedHour;
 }
 
-window.onload = showHour;
+window.onload = showHour
+
+setInterval(showHour,10000)
